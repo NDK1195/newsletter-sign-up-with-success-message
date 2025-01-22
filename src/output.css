@@ -756,16 +756,12 @@ html {
     width: 400px;
   }
 
-  .lg\:max-w-\[400px\]{
-    max-width: 400px;
+  .lg\:max-w-\[376px\]{
+    max-width: 376px;
   }
 
   .lg\:max-w-\[504px\]{
     max-width: 504px;
-  }
-
-  .lg\:max-w-\[376px\]{
-    max-width: 376px;
   }
 
   .lg\:flex-row-reverse{
