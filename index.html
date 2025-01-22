@@ -16,13 +16,168 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
-  <body>
+  <body class="lg:grid lg:min-h-dvh lg:place-items-center lg:bg-charcoal-grey">
     <!-- Sign-up form start -->
+    <div
+      class="flex w-full max-w-[928px] flex-col gap-10 bg-white lg:flex-row-reverse lg:items-center lg:gap-16 lg:rounded-[36px] lg:py-6 lg:pl-16 lg:pr-6 lg:shadow-box"
+      id="sign-up-form"
+    >
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="./images/illustration-sign-up-desktop.svg"
+        />
+        <img
+          src="./images/illustration-sign-up-mobile.svg"
+          alt="illustration signup"
+          class="w-full lg:max-w-[400px]"
+        />
+      </picture>
 
+      <div class="flex flex-col gap-10 px-6 pb-10 lg:p-0">
+        <div class="flex flex-col gap-6">
+          <h1
+            class="text-[40px] font-bold leading-none text-dark-slate-grey lg:text-[56px]"
+          >
+            Stay updated!
+          </h1>
+          <p class="leading-[150%] text-dark-slate-grey">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul
+            class="flex flex-col gap-[10px] leading-[150%] text-dark-slate-grey"
+          >
+            <li class="flex gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li class="flex gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li class="flex gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              <p>And much more!</p>
+            </li>
+          </ul>
+        </div>
+
+        <form class="flex flex-col gap-6" id="form">
+          <div class="flex flex-col gap-2">
+            <div
+              class="flex items-center justify-between text-xs font-bold leading-[150%]"
+            >
+              <label for="input-email" class="text-dark-slate-grey"
+                >Email address</label
+              >
+              <p class="text-tomato" id="error-text"></p>
+            </div>
+            <input
+              type="text"
+              class="rounded-lg px-6 py-[15px] leading-[150%] text-dark-slate-grey outline-none"
+              id="input-email"
+              placeholder="email@company.com"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full rounded-lg bg-dark-slate-grey pb-[14px] pt-[18px] font-bold leading-[150%] text-white transition-all hover:bg-gradient-1 hover:shadow-button"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </div>
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
+    <div
+      class="hidden w-full bg-white px-6 pb-10 pt-[149px] lg:max-w-[504px] lg:rounded-[36px] lg:px-16 lg:pb-16 lg:pt-12 lg:shadow-box"
+      id="success-message"
+    >
+      <div class="mb-[263px] lg:mb-10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+          class="mb-10"
+        >
+          <defs>
+            <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+              <stop offset="0%" stop-color="#FF6A3A" />
+              <stop offset="100%" stop-color="#FF527B" />
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <circle cx="32" cy="32" r="32" fill="url(#a)" />
+            <path
+              stroke="#FFF"
+              stroke-width="4"
+              d="m18.286 34.686 8.334 7.98 19.094-18.285"
+            />
+          </g>
+        </svg>
+        <h2
+          class="mb-6 text-[40px] font-bold leading-none text-dark-slate-grey lg:text-[56px]"
+        >
+          Thanks for subscribing!
+        </h2>
+        <p class="leading-[150%] text-dark-slate-grey">
+          A confirmation email has been sent to
+          <a href="mailto:" class="font-bold">ash@loremcompany.com.</a> Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button
+        class="w-full rounded-lg bg-dark-slate-grey pb-[14px] pt-[18px] font-bold leading-[150%] text-white transition-all hover:bg-gradient-1 hover:shadow-button"
+        id="btn-dismiss-message"
+      >
+        Dismiss message
+      </button>
+    </div>
     <!-- Success message end -->
     <script src="./src/index.js"></script>
   </body>

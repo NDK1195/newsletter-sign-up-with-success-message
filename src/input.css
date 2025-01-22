@@ -9,3 +9,20 @@
     font-family: "Roboto", serif;
   }
 }
+
+#input-email {
+  border: 1px solid rgba(25, 24, 43, 0.25);
+}
+
+#input-email:focus {
+  border-color: #242742;
+}
+
+#input-email.input-error {
+  color: #ff6155;
+  background-color: rgba(255, 97, 85, 0.15);
+  border-color: #ff6155;
+}
+#input-email.input-error::placeholder {
+  color: #ff6155;
+}

@@ -559,3 +559,269 @@ video {
 html {
   font-family: "Roboto", serif;
 }
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-\[263px\]{
+  margin-bottom: 263px;
+}
+
+.flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.max-w-\[928px\]{
+  max-width: 928px;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-\[10px\]{
+  gap: 10px;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.bg-dark-slate-grey{
+  --tw-bg-opacity: 1;
+  background-color: hsl(234 29% 20% / var(--tw-bg-opacity, 1));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-\[15px\]{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.pb-\[14px\]{
+  padding-bottom: 14px;
+}
+
+.pt-\[149px\]{
+  padding-top: 149px;
+}
+
+.pt-\[18px\]{
+  padding-top: 18px;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.leading-\[150\%\]{
+  line-height: 150%;
+}
+
+.leading-none{
+  line-height: 1;
+}
+
+.text-dark-slate-grey{
+  --tw-text-opacity: 1;
+  color: hsl(234 29% 20% / var(--tw-text-opacity, 1));
+}
+
+.text-tomato{
+  --tw-text-opacity: 1;
+  color: hsl(4 100% 67% / var(--tw-text-opacity, 1));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#input-email {
+  border: 1px solid rgba(25, 24, 43, 0.25);
+}
+
+#input-email:focus {
+  border-color: #242742;
+}
+
+#input-email.input-error {
+  color: #ff6155;
+  background-color: rgba(255, 97, 85, 0.15);
+  border-color: #ff6155;
+}
+
+#input-email.input-error::-moz-placeholder {
+  color: #ff6155;
+}
+
+#input-email.input-error::placeholder {
+  color: #ff6155;
+}
+
+.hover\:bg-gradient-1:hover{
+  background-image: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
+}
+
+.hover\:shadow-button:hover{
+  --tw-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+  --tw-shadow-colored: 0px 16px 32px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 1024px){
+  .lg\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:grid{
+    display: grid;
+  }
+
+  .lg\:min-h-dvh{
+    min-height: 100dvh;
+  }
+
+  .lg\:max-w-\[400px\]{
+    max-width: 400px;
+  }
+
+  .lg\:max-w-\[504px\]{
+    max-width: 504px;
+  }
+
+  .lg\:flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
+  .lg\:place-items-center{
+    place-items: center;
+  }
+
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:gap-16{
+    gap: 4rem;
+  }
+
+  .lg\:rounded-\[36px\]{
+    border-radius: 36px;
+  }
+
+  .lg\:bg-charcoal-grey{
+    --tw-bg-opacity: 1;
+    background-color: hsl(235 18% 26% / var(--tw-bg-opacity, 1));
+  }
+
+  .lg\:p-0{
+    padding: 0px;
+  }
+
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:pb-16{
+    padding-bottom: 4rem;
+  }
+
+  .lg\:pl-16{
+    padding-left: 4rem;
+  }
+
+  .lg\:pr-6{
+    padding-right: 1.5rem;
+  }
+
+  .lg\:pt-12{
+    padding-top: 3rem;
+  }
+
+  .lg\:text-\[56px\]{
+    font-size: 56px;
+  }
+
+  .lg\:shadow-box{
+    --tw-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+    --tw-shadow-colored: 0px 15px 60px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
