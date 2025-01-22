@@ -4,6 +4,7 @@ const inputEmail = document.getElementById("input-email");
 const errorText = document.getElementById("error-text");
 const successMessage = document.getElementById("success-message");
 const btnDismissMessage = document.getElementById("btn-dismiss-message");
+const emailSent = document.getElementById("email-sent");
 
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -19,6 +20,7 @@ form.addEventListener("submit", (event) => {
     errorText.textContent = "Valid email required";
   } else {
     signUpForm.classList.add("hidden");
+    emailSent.textContent = emailValue;
     successMessage.classList.remove("hidden");
     inputEmail.value = "";
   }
